@@ -4,7 +4,7 @@ package Arrays.TwoDArray;
 
 public class P06_ColumnWiseSum {
     public static void main(String[] args) {
-                int[][] a = {
+        int[][] a = {
                 { 1, 2, 3 },
                 { 4, 5, 6 }
         };
@@ -14,6 +14,6 @@ public class P06_ColumnWiseSum {
                 sum += a[i][j];
             }
             System.out.println("Sum of column " + j + " is " + sum);
-        }   
+        }
     }
 }
