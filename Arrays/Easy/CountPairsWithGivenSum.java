@@ -1,5 +1,3 @@
-package Arrays.Easy;
-
 /*
 Question:
 Find the total number of pairs in an array whose sum is equal
