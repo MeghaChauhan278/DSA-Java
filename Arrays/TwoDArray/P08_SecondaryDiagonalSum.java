@@ -1,11 +1,12 @@
 /*Question:
-  Find the sum of elements on the main diagonal of a square matrix.
-  (Main diagonal: top-left → bottom-right) */
+  Find the sum of elements on the secondary diagonal of a square matrix.
+  (Secondary diagonal: top-right → bottom-left) */
 
 package Arrays.TwoDArray;
 
-public class P07_MainDiagonalSum {
+public class P08_SecondaryDiagonalSum {
     public static void main(String[] args) {
+        
         int[][] a = {
                 { 1, 2, 3 },
                 { 4, 5, 6 },
@@ -14,11 +15,11 @@ public class P07_MainDiagonalSum {
         int sum=0;
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a[i].length; j++) {
-                if(i==j){
+                if(i+j==a.length - 1){
                     sum+=a[i][j];
                 }
             }
-        }  
-        System.out.println(sum); 
+        }   
+        System.out.println(sum);    
     }
 }
