@@ -8,7 +8,7 @@ public class P01_AverageOfArrayElements {
         for(int i=0;i<a.length;i++){
             sum+=a[i];
         }
-        int avg=sum/a.length;
+        double avg=(double)sum/a.length;
         System.out.println(avg);
     }
 }
