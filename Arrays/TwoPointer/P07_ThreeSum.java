@@ -17,7 +17,7 @@ public class P07_ThreeSum {
         int[] a={-1,0,1,2,-1,-4};
         Arrays.sort(a);
         List<List<Integer>> result=new ArrayList<>();
-        for(int i=0;i<a.length;i++){
+        for(int i=0;i<a.length-2;i++){
             if(i>0 && a[i]==a[i-1]){
                 continue;
             }
