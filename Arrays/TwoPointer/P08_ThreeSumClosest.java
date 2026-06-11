@@ -6,32 +6,42 @@ Input: nums = [-1,2,1,-4], target = 1
 Output: 2
 Explanation: The sum that is closest to the target is 2. (-1 + 2 + 1 = 2). */
 package Arrays.TwoPointer;
+
 import java.util.*;
+
 public class P08_ThreeSumClosest {
     public static void main(String[] args) {
-        int[] nums={-1,2,1,-4};
+
+        int[] nums = { -1, 2, 1, -4 };
         int target = 1;
 
-        int maxdiff=Integer.MAX_VALUE;
+        int maxdiff = Integer.MAX_VALUE;
         Arrays.sort(nums);
-        int result=0;
+        int result = 0;
 
-        for(int i=0;i<nums.length;i++){
-            int start=i+1;
-            int end=nums.length-1;
+        for (int i = 0; i < nums.length - 2; i++) {
+            int start = i + 1;
+            int end = nums.length - 1;
 
-            while(start<end){
-                int sum=nums[i]+nums[start]+nums[end];
-                int diff=Math.abs(sum-target);
-                if(diff<maxdiff){
-                    maxdiff=diff;
-                    result=sum;
+            while (start < end) {
+                int sum = nums[i] + nums[start] + nums[end];
+                int diff = Math.abs(sum - target);
+
+                if (diff < maxdiff) {
+                    maxdiff = diff;
+                    result = sum;
                 }
-                if (target==sum){
+
+                if (target == sum) {
                     System.out.println(sum);
-                }else if(sum<target){
+                    return;
+                } 
+                
+                else if (sum < target) {
                     start++;
-                }else{
+                } 
+                
+                else {
                     end--;
                 }
             }
