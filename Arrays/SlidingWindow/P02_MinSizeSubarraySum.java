@@ -15,9 +15,9 @@ public class P02_MinSizeSubarraySum {
         int sum=0;
         while(high<a.length){
             sum+=a[high];
-            if(sum>=target){
+            while(sum>=target){
                 res=Math.min(res, high-low+1);
-                sum-=low;
+                sum-=a[low];
                 low++;
             }
             high++;
