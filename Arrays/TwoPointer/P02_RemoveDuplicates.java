@@ -16,7 +16,7 @@ public class P02_RemoveDuplicates {
             }
             fast++;
         }
-        System.out.println(slow+1);
+        System.out.println(slow+1);//arr st from 0
         System.out.println(Arrays.toString(nums));
     }
 }
