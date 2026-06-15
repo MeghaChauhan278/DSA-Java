@@ -3,7 +3,7 @@
 Examples :
 Input: sum = 2, arr[] = [-2, 0, 1, 3]
 Output:  2
-Explanation: Triplets with sum less than 2 are (-2, 0, 1) and (-2, 0, 3).  */
+Explanation: Triplets with sum less than 2 are (-2, 0, 1) and (-2, 0, 3). ----[gfg]---- */
 package Arrays.TwoPointer;
 import java.util.*;
 public class P09_TripletWithSmallerSum {

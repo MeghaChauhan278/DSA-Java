@@ -20,9 +20,9 @@ public class P00_TwoSum {
                 System.out.println(Arrays.toString(new int[]{map.get(needed),i}));
                 return;
             }
-            map.put(nums[i], i);
+            map.put(nums[i], i);//stores value in hashmap if needed value isnt found
         }
-        // System.out.println(Arrays.toString(new int[]{}));
+        // System.out.println(Arrays.toString(new int[]{})); -->inp always has a soln, this won't run
     }
     
 }
