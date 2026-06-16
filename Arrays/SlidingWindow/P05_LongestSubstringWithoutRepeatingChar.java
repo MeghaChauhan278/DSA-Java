@@ -25,7 +25,7 @@ public class P05_LongestSubstringWithoutRepeatingChar {
                     map.remove(leftch);
                 }
                 low++;
-                k=high-low+1;
+                k=high-low+1;//bcoz length is changing
             }
             res=Math.max(res, high-low+1);
             high++;
