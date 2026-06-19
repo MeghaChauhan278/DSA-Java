@@ -14,11 +14,11 @@ public class P01_MaxSumSubarrayOfSizeK {
 
         int sum=0;
         int low=0,high=k-1;
-        for(int i=0;i<=high;i++){
+        for(int i=0;i<=high;i++){//this loop calculates the sum of the first window of size k.
             sum+=a[i];
         }
         int result=sum;
-        while(high<a.length-1){
+        while(high<a.length-1){//sliding
             low++;
             sum-=a[low-1];
             high++;

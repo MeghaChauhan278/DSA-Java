@@ -19,7 +19,7 @@ public class P06_LongestRepeatingCharReplacement {
         
         while(high<s.length()){
             char ch=s.charAt(high);
-            freq[ch - 'A']++;
+            freq[ch - 'A']++;//65-65 , "Increase the frequency count of the current character."
 
             maxcount=Math.max(maxcount,freq[ch - 'A']);
 

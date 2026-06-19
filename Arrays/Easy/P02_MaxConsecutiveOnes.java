@@ -20,3 +20,18 @@ public class P02_MaxConsecutiveOnes {
         System.out.println(maxcount);
     }
 }
+/*Pattern Recognition
+
+Whenever a question asks:
+
+"maximum consecutive ..."
+"longest streak ..."
+"continuous sequence ..."
+"count until condition breaks ..."
+
+Think:
+
+count++;
+max = Math.max(max, count);
+
+and reset when the streak breaks. */
