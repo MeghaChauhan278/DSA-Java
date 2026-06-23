@@ -11,7 +11,7 @@ package Arrays.SlidingWindow;
 import java.util.*;
 public class P10_ContainsDuplicatesII {
     public static void main(String[] args) {//fixed sliding window
-        int[] nums={1,2,3};
+        int[] nums={1,2,3,1};
         int k=3;
         HashMap<Integer,Integer> map=new HashMap<>();
         boolean found=false;
