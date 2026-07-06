@@ -21,7 +21,7 @@ public class P04_MaxSubarraySumWithOneDel {
             int prev_onedel=onedel;
             nodel =Math.max(arr[i],prev_nodel+arr[i]);
             int v1;
-            if(onedel==Integer.MIN_VALUE){
+            if(prev_onedel==Integer.MIN_VALUE){
                 v1=arr[i];
             }else{
                 v1=arr[i]+prev_onedel;
