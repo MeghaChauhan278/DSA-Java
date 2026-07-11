@@ -15,9 +15,9 @@ public class P01_ReverseAString {
         for(int i=0;i<s.length();i++){
             st.push(s.charAt(i));
         }
-        String ans="";
+        StringBuilder ans=new StringBuilder();
         while (!st.isEmpty()) {
-            ans+=st.pop();
+            ans.append(st.pop());
         }
         System.out.println(ans);
     }
