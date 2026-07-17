@@ -31,3 +31,5 @@ public class P11_MaxAvgSubarrayI {
         System.out.println(res);
     }
 }
+//T.C=O(n)
+//S.C=O(1)
