@@ -24,6 +24,7 @@ public class P03_ValidParentheses {
             }else{
                 if(stack.isEmpty()){
                     isValid=false;
+                    break;
                 }
 
                 char top=stack.pop();
@@ -47,3 +48,6 @@ public class P03_ValidParentheses {
         System.out.println(isValid);
     }
 }
+
+//T.C=O(n)
+//S.C=O(n)
