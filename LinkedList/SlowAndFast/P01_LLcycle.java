@@ -24,3 +24,6 @@ public class P01_LLcycle {
         return false;
     }
 }
+
+//Time Complexity: O(n)
+//Space Complexity: O(1)

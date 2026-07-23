@@ -13,7 +13,6 @@ Constraints:
 1 ≤ arr[i] ≤ 105 */
 
 import java.util.*;
-
 public class P07_PrevSmallerElement {
     public static void main(String[] args) {
         int[] arr = { 1, 6, 2 };
