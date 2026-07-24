@@ -11,7 +11,7 @@ Constraints:
 import java.util.Arrays;
 import java.util.Stack;
 
-public class P08_DailyTemperature {
+public class P09_DailyTemperature {
     public static void main(String[] args) {
         int[] temperatures = {73,74,75,71,69,72,76,73};
         int n=temperatures.length;
