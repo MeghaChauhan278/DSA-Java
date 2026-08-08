@@ -5,29 +5,35 @@ Example 1:Input: nums = [4,5,0,-2,-3,1], k = 5
 Output: 7
 Explanation: There are 7 subarrays with a sum divisible by k = 5:
 [4, 5, 0, -2, -3, 1], [5], [5, 0], [5, 0, -2, -3], [0], [0, -2, -3], [-2, -3]
- */
+ Constraints:
+1 <= nums.length <= 3 * 104
+-104 <= nums[i] <= 104
+2 <= k <= 104*/
 package Patterns.PrefixSum;
 import java.util.*;
 public class P03_SubarraySumDivisibleByK {
-    public static void main(String[] args) {
-        int[] nums={4,5,0,-2,-3,1};
-        int k=5;
-
+    public static int subarraysDivByK(int[] nums, int k){
         HashMap<Integer,Integer> map=new HashMap<>();
-
         map.put(0, 1);
         int sum=0,res=0;
         for(int i=0;i<nums.length;i++){
             sum+=nums[i];
-
             int rem=sum%k;
             if(rem<0){
-                rem+=k;
+                rem=rem+k;
             }
-            int freq=map.getOrDefault(rem, 0);
+            int freq=map.getOrDefault(rem,0);
             res+=freq;
-            map.put(rem, map.getOrDefault(rem, 0)+1);
+            map.put(rem,map.getOrDefault(rem,0)+1);
         }
-        System.out.println(res);
+        return res;
+    }
+    public static void main(String[] args) {
+        int[] nums={4,5,0,-2,-3,1};
+        int k=5;
+        int ans=subarraysDivByK(nums,k);
+        System.out.println(ans);
     }
 }
+//T.C=O(n)
+//S.C=O(n)
