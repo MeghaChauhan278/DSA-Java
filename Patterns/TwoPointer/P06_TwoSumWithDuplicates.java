@@ -1,6 +1,7 @@
 /*Questions: Given a sorted array that may contain duplicate elements and a target value,
  find all unique pairs whose sum equals the target. */
 
+
 package Patterns.TwoPointer;
 import java.util.Arrays;
 
@@ -32,3 +33,5 @@ public class P06_TwoSumWithDuplicates {
         }
     }
 }
+// T.C=O(n)
+// S.C=O(1)
