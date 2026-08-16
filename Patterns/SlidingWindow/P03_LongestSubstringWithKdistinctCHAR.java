@@ -49,4 +49,4 @@ public class P03_LongestSubstringWithKdistinctCHAR {
     }
 }
 //T.C=O(n)
-//S.C=O(n)
+//S.C=O(1)
